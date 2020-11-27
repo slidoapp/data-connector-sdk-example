@@ -1,7 +1,7 @@
 import boto3
 import os
 import time
-import pprint
+from pprint import pprint
 
 AWS_ACCESS_KEY = os.environ['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
@@ -64,8 +64,5 @@ if __name__ == '__main__':
                             aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
     s3_location = f's3://{params["bucket"]}/{params["database"]}'
 
-    pprint.pprint(athena_query(athena,
-                               params['query'],
-                               params['database'],
-                               params['workgroup'],
-                               s3_location))
+    pprint(athena_query(athena, params['query'], params['database'],
+                        params['workgroup'], s3_location))

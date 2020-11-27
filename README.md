@@ -2,11 +2,11 @@
 
 This repository contains a simple example of running queries via the
 [Slido Data Connector](https://docs.google.com/document/d/19PLz-NZPXOm5YDNXML9P419BRek7QQymExI0gxlxK9o/edit)
-(currently in preview) using [AWS SDK](https://aws.amazon.com/sdk-for-python/) in Python.
+(currently in preview) using [AWS SDK](https://aws.amazon.com/sdk-for-python/) in Python 3+.
 
 ### Requirements
 
-is `boto3` (tested with version 1.16.25).
+For the "basic" example (`query.py`) `boto3` is required (tested with version 1.16.25).
 
 You can install it (along its dependencies) by running the following command:
 
@@ -25,4 +25,5 @@ Provided all the requirements are installed, the example can be executed by
 running
 
         $ python query.py
+
 
